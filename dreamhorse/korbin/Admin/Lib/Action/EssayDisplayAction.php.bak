@@ -1,7 +1,0 @@
-<?php
-class EssayDisplayAction extends Action{
-	public function index(){
-		$this->diplay();
-	}
-
-}
