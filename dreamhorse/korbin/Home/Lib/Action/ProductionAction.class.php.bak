@@ -1,0 +1,35 @@
+<?php
+class WorkAction extends Action{
+	public function index(){
+		$myself = M('User')->where(array('username'=>$_SESSION['username']))->find();
+
+		$work = M('Production')->find($_GET['id']);
+		$myself = M('User')->where(array('username'=>$_SESSION['username']))->find();
+		
+		$str = $work[content];
+		
+		//去掉转义后字符串中的反斜杠\
+		//$str = html_entity_decode($str);
+		$str = stripslashes($str);
+
+
+		$work[content] = $str;
+
+
+		if($work){
+			$this->assign('essay', $work);
+			$this->assign('title', $work[title]);
+		}
+
+		if($myself){
+			$this->assign('myself', $myself);
+		}
+		
+		$this->assign('myself', $myself);
+		$this->assign('current_page', 'home_page');
+
+		$this->display();
+	}
+
+
+}

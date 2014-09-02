@@ -1,0 +1,22 @@
+<?php
+	 class AboutUsAction extends Action {
+		public function index(){
+			define('APP_DEBUG', true);
+
+			$myself = M('User')->where(array('username'=>$_SESSION['username']))->find();
+    
+			
+
+			$this->assign('title', '关于我们 - 以梦为马');
+			$this->assign('content_title', '关于我们');
+			$this->assign('myself', $myself);
+			$this->assign('current_page', 'aboutus_page');
+			
+			$this->display(); // 输出模板
+
+		}
+		
+		
+		
+		
+	}

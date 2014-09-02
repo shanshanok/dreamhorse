@@ -1,0 +1,163 @@
+/*左侧岗位列表*/
+#industry-list{
+	width:270px;
+	border: 1px solid #D9D9D9;
+	box-shadow: 1px 1px 2px rgba(175, 177, 178, 0.35);
+	background:#FBFBFB;
+	position:relative; 
+	float:left;
+}
+
+
+#industry-list .list-tip{
+	
+	padding:10px 0px 10px 50px;
+	font-weight:650;
+	font-size:16px;
+	background: rgb(243, 243, 243);
+}
+
+#industry-list li p.industry{
+	display:block;
+	margin:0px auto;
+	width:170px;
+	border-bottom: 1px solid #E6E6E6;
+	padding:8px;
+	
+}
+
+#industry-list li:hover{
+	border-top: 2px solid #7AB1CC;
+	border-bottom:1px solid #E6E6E6;
+	border-left:none;
+	border-right:none;
+	width:100%;
+	background:#FFFFFF;
+}
+
+#industry-list li:hover p.industry{
+	border:none;
+	
+}
+
+#industry-list li:hover .detail-industry{
+	display:block;
+	position:absolute;
+}
+
+
+.detail-industry{
+	display:none;
+	font-size:12px;
+	width:330px;
+	min-heigh:200px;
+	left:100%;
+	top:-2px;
+	padding: 10px 16px 20px 30px;
+	border-top: 2px solid #7AB1CC;
+	border-right: 1px solid #D9D9D9;
+	border-bottom: 1px solid #D9D9D9;
+	box-shadow: 1px 1px 2px rgba(175, 177, 178, 0.35);
+	background:#FFFFFF;
+	position:absolute;
+	z-index:200;
+}
+
+.detail-industry li{
+	display:block;
+	width:110px;
+	float:left;
+	position:relative;
+}
+/*额外*/
+.detail-industry li #edit{ float:left;  display:none;color:#FF6600;}
+.detail-industry li p{  float:left; }
+
+#industry-list .detail-industry li:hover{
+	display:block;
+	border:none;
+	width:108px; 
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+
+
+.detail-industry li p{
+	border:none;
+}
+
+.namelist p{ color:#999999;}
+.list-title{
+	font-weight:650;
+	font-size:16px;
+	color:#E65C13;
+}
+
+.addPost{
+	
+	font-size:16px;
+	font-weight:300;
+	float:right;
+	margin-right:50px;
+}
+
+a.addPost:hover{
+	color:#525252;
+}
+
+/*职位信息*/
+#post-info{
+	width:70%;
+	float:left;
+}
+
+.post-title{
+	margin:10px;
+	font-size:18px;
+	font-weight:500;
+	color:rgb(34, 34, 34);
+}
+
+.post-info-part{
+	width:100%;
+	min-height:200px;
+	margin:0px 10px 10px 10px;
+	border: 1px solid #D9D9D9;
+	box-shadow: 1px 1px 2px rgba(175, 177, 178, 0.35);
+	background:#FBFBFB;
+	float:left;
+	position:relative;
+}
+
+
+.classcify {
+ 	width:100%;
+	
+}
+.topic{
+	float:left;
+	margin:10px;
+	text-align: center;
+	font-size:16px;
+	color:#FF6600;
+}
+.topic-content
+{ 	float:left;
+   	
+  	margin:10px;
+	width:588px;
+}
+a.edit{
+	right:20px;
+	bottom:10px;
+	color:#0066FF;
+	position:absolute;
+}
+
+a.edit:hover{
+	color:#525252;
+}
+
+
+

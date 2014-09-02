@@ -1,0 +1,94 @@
+<div id="aside-left">
+	<div id="nav-aside">
+		<ul id="mynav">
+			<li><a href="">文章分类
+				<span class="arrow">></span></a>
+				
+				<ul>
+					<li><a href="__APP__/Category?essaytype=divcss">DIV+CSS</a>
+					</li>
+					<li><a href="__APP__/Category?essaytype=javascript">JavaScript</a>
+					</li>
+					<li><a href="__APP__/Category?essaytype=productanalysis">产品分析</a>
+					</li>
+					<li><a href="__APP__/Category?essaytype=industryobservation">行业观察</a>
+					</li>
+					<li><a href="__APP__/Category?essaytype=demandanalysis">需求分析</a>
+					</li>
+				</ul>
+			</li>
+			<li><a href="">原创作品
+			<span class="arrow">></span></a>
+				<ul>
+					<li><a href="">原型设计</a>
+					</li>
+					<li><a href="">导航菜单</a>
+					</li>
+				</ul>
+			</li>
+			<li><a href="">杂谈</a></li>
+			<li><a href="">职业规划</a></li>
+			<li><a href="">图书推荐</a></li>
+			<li><a href="">酷站推荐</a></li>
+			<li><a href="">关于我们</a></li>
+		</ul>
+	</div>
+	
+	<div id="books-recommended">
+		<p class="content-title">
+			学习用书
+		</p>
+		<ul class="content-list">
+			<li>
+				<a target="blank" href="http://book.douban.com/subject/10546125/">
+					<div class="book-img"><img src="__TMPL__/resource/images/JavaScript高级程序设计.jpg"/></div>
+					<dl class="book-info">
+						<dt>JavaScript高级程序设计</dt>
+						<dd>
+							<strong>推荐：</strong>
+							全能前端人员必读之经典
+						</dd>
+					</dl>
+				</a>
+				<!--line-->
+				<li>
+				<a target="blank" href="http://book.douban.com/subject/4736167/">
+					<div class="book-img"><img src="__TMPL__/resource/images/精通CSS.jpg"/></div>
+					<dl class="book-info">
+						<dt>精通CSS：高级Web标准解决方案</dt>
+						<dd>
+							<strong>推荐：</strong>
+							令人叫绝的CSS技术汇总
+						</dd>
+					</dl>
+				</a>
+			</li>
+			<!--line-->
+			<li>
+				<a target="blank" href="http://book.douban.com/subject/5914587/">
+					<div class="book-img"><img src="__TMPL__/resource/images/启示录.jpg"/></div>
+					<dl class="book-info">
+						<dt>启示录 : 打造用户喜爱的产品</dt>
+						<dd>
+							<strong>推荐：</strong>
+							产品经理必读书籍
+						</dd>
+					</dl>
+				</a>
+			</li>
+			<!--line-->
+			<li>
+				<a target="blank" href="http://book.douban.com/subject/6709783/">
+					<div class="book-img"><img src="__TMPL__/resource/images/浪潮之巅.jpg"/></div>
+					<dl class="book-info">
+						<dt>浪潮之巅</dt>
+						<dd>
+							<strong>推荐：</strong>
+							不仅讲述科技工业的历史，更重在揭示它的规律性
+						</dd>
+					</dl>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>

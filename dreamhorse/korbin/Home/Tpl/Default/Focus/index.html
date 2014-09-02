@@ -1,0 +1,39 @@
+<include file="Public:header"/>
+<link rel="stylesheet" href="__TMPL__/resource/css/focus.css"/>
+<input type="hidden" id="currentMember" value="<{$member.username}>"/><!--获取当前Profile页面的成员名称-->
+<input type="hidden" id="myself" value="<{$myself.username}>"/><!--获取当前登录用户名称-->
+
+
+<div class="container-outer">
+	<div class='focus-inner'>
+		<div class='focus-tab'>
+			<a href="">我的关注(<{$allcount}>)</a>
+
+		</div>
+
+		<div class='focus-group'>
+			<span>全部 （待编辑）</span>
+		</div>
+
+		<div class='focus-content'>
+			<foreach name='list' item='item'>
+				<div class='focus-member'>
+					<dl>
+						<dt>
+							<a href="__APP__/Profile?member=<{$item.focusname}>">
+								<img title="<{$item.focusname}>" onerror="this.src='__TMPL__/resource/images/person-default-large.png'" src="__ROOT__/Home/Uploads/<{$item.focusname}>_large.png"/>
+							</a>
+						</dt>
+						<dd>
+							<h3><a href="__APP__/Profile?member=<{$item.focusname}>"><{$item.focusname}></a></h3>
+							<div><span><{$item.direction}></span></div>
+						</dd>
+					</dl>
+				</div>
+			</foreach>
+		</div>
+		<br class="clear"/>
+	</div>
+</div>
+
+<include file="Public:footer"/>

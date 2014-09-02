@@ -1,0 +1,12 @@
+[ 2014-03-23T09:52:14+08:00 ] 127.0.0.1 /korbin/admin.php/UserM?type=user
+ERR: 无法加载模块:UserM
+
+[ 2014-03-23T09:57:06+08:00 ] 127.0.0.1 /korbin/admin.php/UserM?type=user
+ERR: 无法加载模块:UserM
+
+[ 2014-03-23T10:30:29+08:00 ] 127.0.0.1 /korbin/admin.php/UserM/displayusers
+ERR: 模板不存在[./Admin/Tpl/public/displayusers.html]
+
+[ 2014-03-23T10:30:45+08:00 ] 127.0.0.1 /korbin/admin.php/UserM/displayusers
+ERR: 模板不存在[./Admin/Tpl/public/displayusers.html]
+

@@ -1,0 +1,124 @@
+﻿<include file="Public:header"/>
+<link rel="stylesheet" type="text/css" href="__TMPL__/resource/css/profile.css"/>
+
+	<input type="hidden" id="currentProfilePage" value="<{$current_profile_page}>"/>
+	<input type="hidden" id="currentMember" value="<{$member.username}>"/><!--获取当前Profile页面的成员名称-->
+	<input type="hidden" id="myself" value="<{$myself.username}>"/><!--获取当前登录用户名称-->
+	<!-- 添加 -->
+	<input type="hidden" id="relatedMember" value="<{$focus.focusname}>"/>
+	<div id="container-wrap">
+		<div class="inner-wrap">
+			<div class="personal-card">
+				<div class="potrait">
+					<a id="a-potrait" href="__APP__/UploadImage" target="blank">
+						
+						<img title="点我，换头像哦~" alt="快快点我，上传头像哦~" onerror="this.src='__TMPL__/resource/images/person-default-large.png'" src="__ROOT__/Home/Uploads/<{$member.username}>_large.png"/>
+					</a>
+					<div class='addfocus'>
+					<span><em>+</em>关注</span>
+				    </div>
+				    <div id="tip"></div>
+				</div>
+				
+				<div id="personal-card-box" class="personal-card-box">
+					<form id="person-info" method="post">
+						<p class="card-info" >
+							<span class="name personal-info"><{$member.username}></span>
+						</p>
+						<p class="card-info">
+							<span class='info-tips'>邮箱：</span>
+							<span id="email" class="email personal-info edit-content"><{$member.email}></span>
+							
+						</p>
+						<p class="direction card-info" onmouseover="showEdit(this);" onmouseout="hideEdit(this);">
+							<span class='info-tips'>就职方向：</span>
+							<span  class="edit-content personal-info" id="direction"><{$member.direction}></span>	
+							<span class="edit" onclick="editContent(this);">
+								<span class="edit-inner img-edit-inner" ></span>
+								<span class="edit-inner" >修改</span>
+							</span>
+						</p>
+						<p class="card-info" onmouseover="showEdit(this);" onmouseout="hideEdit(this);">
+							<!-- 添加 -->
+							<span class="info-tips">公司职位：</span>
+							<span id="company" class="personal-info edit-content"><{$member.company}></span>
+							<span class="edit" onclick="editContent(this);">
+								<span class="edit-inner img-edit-inner" ></span>
+								<span class="edit-inner">修改</span>
+							</span>
+						</p>
+						<p class='card-info' onmouseover="showEdit(this);" onmouseout="hideEdit(this);">
+							<span class='info-tips'>毕业院校：</span>
+							<span id="organization" class=" personal-info edit-content"><{$member.organization}></span><!--后边 不能加&nbsp;否则从空的内容到添加内容的第一次添加仍为空-->
+							<span class="edit" onclick="editContent(this);">
+								<span class="edit-inner img-edit-inner" ></span>
+								<span class="edit-inner">修改</span>
+							</span>
+						</p>
+						<p class='card-info' onmouseover="showEdit(this);" onmouseout="hideEdit(this);">
+							<span class='info-tips'>个人网站：</span>
+							<span id="website" class=" personal-info edit-content"><{$member.website}></span>
+							<span class="edit" onclick="editContent(this);">
+								<span class="edit-inner img-edit-inner" ></span>
+								<span class="edit-inner">修改</span>
+							</span>
+						</p>
+						<p class='card-info' onmouseover="showEdit(this);" onmouseout="hideEdit(this);">
+							<span class='info-tips'>个人简介：</span>
+							<span id="resume" class=" personal-info edit-content"><{$member.resume}></span>
+							<span class="edit" onclick="editContent(this);">
+								<span class="edit-inner img-edit-inner" ></span>
+								<span class="edit-inner">修改</span>
+							</span>
+						</p>
+					</div>
+					<br class="clear"/>
+				</form>
+				
+			</div>
+			<div class="personal-expression">
+				<p class="join-time">加入以梦为马：2014-01-17</p>
+				<ul>
+					<li>好评</li>
+					<li>活跃</li>
+				</ul>
+				<ul>
+					<li>0</li>
+					<li>0</li>
+				</ul>
+			</div>
+			<!-- 添加 -->
+			<div class=" members-focus">
+					<form>
+						<fieldset class='form-focus'>
+							<legend class='focus-head'><a id='focushead' href="__APP__/Focus?username=<{$myself.username}>">我的关注(<{$allcount}>)</a></legend>
+							<div id='focustip'></div>
+							<div id='membersfocus'>
+							<!-- <foreach name='list' item='item'>
+								<div class='focusmember'>
+									<a href="__APP__/Profile?member=<{$item.focusname}>" target="blank">
+										<img title="<{$item.focusname}>" onerror="this.src='__TMPL__/resource/images/person-default-middle.png'" src="__ROOT__/Home/Uploads/<{$item.focusname}>_middle.png"/>
+										<span title="<{$item.focusname}>"><{$item.focusname}></span>
+									</a>
+								</div>
+							</foreach> -->
+							</div>	
+						</fieldset>
+					</form>
+					
+			</div>
+
+			<div class="profile-nav-wrap">
+				<div class="profile-nav">
+					<a class="profile-nav-item" id="timeline-title" href="__APP__/Profile?member=<{$member.username}>">时间轴</a>
+					<span class="profile-nav-item">|</span>
+					<a class="profile-nav-item" id="works-title" href="__APP__/Profile/myWorks?member=<{$member.username}>">文章/作品</a>
+					<br class="clear"/>
+				</div>
+			</div>
+			<div class="dividing-line"></div>
+		<!--此处jquery-1.7.2.min.js和jquery.masonry.min.js文件必须要在footer.html中重新加载一遍，因为在非Profile页面中也会用到jquery-1.7.2.min.js文件，所以要在footer.html中重新加载一次。加载完成后，此处的jquery.masonry.min.js文件又会变得无效，只能在footer.html中jquery-1.7.2.min.js文件之后重新加载一次。如果此时去掉Profile页面中两个文件的加载语句的话，profile.js中的$()会变得无效，就是说jquery语句无法执行。所以最后找到的解决方案只能是在Profile页面和footer.html文件中各加载一次。
+		不能将profile.js文件改在footer.html文件中加载的原因是该js文件中定义的函数在其他页面中执行会出错-->	
+<script type="text/javascript" src="__TMPL__/resource/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="__TMPL__/resource/js/jquery.masonry.min.js"></script>
+<script type="text/javascript" src="__TMPL__/resource/js/profile.js"></script>

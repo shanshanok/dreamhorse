@@ -1,0 +1,23 @@
+<include file="Public:header"/>
+	<link rel="stylesheet" href="__TMPL__/resource/css/members.css"/>
+	<div id="container-wrap">
+		<div id="members">
+		
+			<foreach name="members" item="member">
+				
+				<div class="member">
+					<a href="__APP__/Profile?member=<{$member.username}>"><img src="__ROOT__/Home/Uploads/<{$member.username}>_large.png"/></a>
+					<div class="person-meta">
+						<div class="name"><{$member.username}></div>
+						<div class="email"><{$member.email}></div>
+						<div class="school"><{$member.school}></div>
+						<div class="motto"><{$member.motto}></div>
+					
+					</div>
+				</div>
+		
+			</foreach>
+			<br class="clear"/>
+		</div>
+	</div>
+<include file="Public:footer"/>

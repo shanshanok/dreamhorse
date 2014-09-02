@@ -1,0 +1,24 @@
+<?php
+class EssayMAction extends Action{
+	public function index(){
+       $essays = M('Production')->where('checked=false')->Distinct(true)->field('type')->select();
+	   $this->assign('essays',$essays);
+       $essays1 = M('Production')->select();
+	   $this->assign('essays1',$essays1);
+	   $this->display();
+	}
+
+	public function selectEssays(){
+       $essays = M('Production')->where(array('essaytype'=>$_POST['selecttext'],'checked'=>false) )->select();
+	   $this->assign('essays1',$essays);
+       $essays1 = M('Production')->where('checked=false')->Distinct(true)->field('type')->select();
+	   $this->assign('essays',$essays1);
+	   $this->display('index');
+	}
+
+}
+
+	
+			
+			
+		

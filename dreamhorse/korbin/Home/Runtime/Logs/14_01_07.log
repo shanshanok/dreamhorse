@@ -1,0 +1,12 @@
+[ 2014-01-07T01:34:25+08:00 ] 127.0.0.1 /korbin/index.php/Profile
+ERR: XML标签语法错误 : $i=0; $i < 7; $++
+
+[ 2014-01-07T01:34:35+08:00 ] 127.0.0.1 /korbin/index.php/Profile
+ERR: XML标签语法错误 : $i=0; $i < 7; $i++
+
+[ 2014-01-07T01:35:33+08:00 ] 127.0.0.1 /korbin/index.php/Profile
+ERR: XML标签语法错误 : start=0 end=7 step=1
+
+[ 2014-01-07T12:20:06+08:00 ] 127.0.0.1 /korbin/index.php/Articleadd/Login/index
+ERR: 非法操作:Login
+

@@ -1,0 +1,26 @@
+<include file="Public:header"/>
+	
+		<div id="container-wrap">
+			<include file="Public:aside-left"/>
+			<div id="main">
+				<div id="content-essay">
+						<div class="essay">
+							<div class="essay-header">
+								<h2 class="essay-title"><a href=""><{$essay.essaytitle}></a></h2>
+								<div class="essay-metas">
+								作者：<{$essay.essayauthor}>&nbsp;&nbsp;类型：<{$essay.essaytype}>&nbsp;&nbsp;时间：<{$essay.essaytime}>
+								</div>
+							</div>
+							
+							<div class="essay-summary">
+								<p><{$essay.essaycontent}></p>
+							</div>
+						</div>
+				</div>
+			</div>
+			
+		</div>
+			
+<include file="Public:footer"/>
+		
+

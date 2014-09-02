@@ -1,0 +1,81 @@
+<include file="Public:header"/>
+	
+		<div id="container-wrap">
+			
+			<div id="main">
+				<div id="content-essay">
+						<div class="essay">
+							<div class="essay-header">
+								<h2 class="essay-title">
+									<a href=""><{$exp.title}></a>
+									
+								</h2>
+								<div class="essay-metas">
+									<div class="left">
+										<span class="muted">
+										<i class="icon-user icon12"></i>
+										<a class="inline hovercolor"  href="__APP__/Profile?member=<{$exp.author}>">
+											<{$exp.author}>&nbsp;&nbsp;
+										</a>
+										</span>
+									
+										<span class="muted">
+										<i class="icon-time icon12"></i><{$exp.addtime}>&nbsp;&nbsp;
+										</span>
+										<span class="muted">
+										<i class="icon-type icon12"></i><{$exp.type}>类型&nbsp;&nbsp;
+										</span>
+										
+										<span class="muted">
+										<i class="icon-eye-open icon12"></i><{$exp.visits}>&nbsp;浏览&nbsp;&nbsp;
+										</span>
+										<span class="muted">
+										<i class="icon-comment icon12"></i><{$exp.commentscount}>&nbsp;评论&nbsp;&nbsp;
+										</span>
+									</div>
+									<div class="right" name="edit" id="edit">
+										<a  href="__APP__/ExperienceEdit?id=<{$exp.id}>">编辑</a>
+										<a  href="__APP__/ExperienceEdit/experienceDelete?id=<{$exp.id}>">删除</a>
+										<input type="hidden"  id="targetno" value="<{$exp.id}>"/>
+										<input type="hidden" id="motto" value="<{$myself.motto}>"/>
+										<input type="hidden" id="commenttype" value="experiencecomment"/>
+									</div>
+								</div>
+								
+							</div>
+							
+							<div class="essay-summary">
+								<p><{$exp.content}></p>
+							</div>
+							<div class="box">
+								<input type="hidden" id="praisetype" value="experiencepraise"/>
+								<div class="pos-btn" id="like" onclick="addLike()">
+								<p id="add1" class="pos-btn">+1</p>
+								<i class="icon-like icon12" title="喜欢"></i>
+								<p id="add1" class="pos-btn">+1</p>
+								<span id="likecount"><{$likecount}></span>
+								</div>
+								
+									
+								<div class="pos-btn" id="dislike" onclick="addDislike()">
+									
+									<i class="icon-dislike icon12" title="没劲"></i>
+									<p id="add2" class="pos-btn">+1</p>
+									<span id="dislikecount"><{$dislikecount}></span>
+								</div>
+							</div>
+						</div>
+				</div>
+				<include file="Public:comment"/>
+			</div>
+			<input id="author" type="hidden" value="<{$exp.author}>"/>
+			
+			<include file="Public:aside-right"/>
+			
+			<br class="clear"/><!--因为浮动元素不占据空间，所以容器元素不包围他们。添加一个进行清理的空元素可以迫使容器元素包围浮动元素-->
+			
+		</div>
+			
+<include file="Public:footer"/>
+		
+

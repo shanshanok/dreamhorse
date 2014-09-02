@@ -1,0 +1,17 @@
+<div id="message"  >
+					 <a href="__APP__"><img src="__TMPL__/resource/images/message.png" ></a>
+					    <div id="message-num" onMouseOver="showmessage()"><p id="messagenum"><{$num}></p></div>
+						 <input type="hidden" id="num" value="<{$num}>">
+						<div id="message-detail">
+						<table  style="font-size:11px;">
+						 <volist name="messagedetail" id="message">
+							<tr>   
+							<td style="color:#FF3300"><{$message.comment_user}></td>&nbsp;&nbsp;
+							<td>回复了您的</td>&nbsp;&nbsp;
+							<td style="color:#FF3300"><{$message.message_title}></td>&nbsp;&nbsp;
+							<td><a  href="__APP__/<{$message.prodouction_type}>?id=<{$message.comment_targetno}>& messageno=<{$message.messageno}>">查看</a></td>
+							</tr>
+						</volist>
+						</table>
+						</div>
+					 </div>

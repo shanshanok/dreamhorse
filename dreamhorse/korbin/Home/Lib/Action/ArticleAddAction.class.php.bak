@@ -1,0 +1,67 @@
+<?php
+class ArticleAddAction extends Action{
+	public function index(){
+		
+		//echo $_SERVER['DOCUMENT_ROOT'];
+
+		$isLogin = $_SESSION['isLogin'];
+		$myself = M('User')->where(array('username'=>$_SESSION['username']))->find();
+
+
+
+		$this->assign('myself', $myself);
+
+		if( $isLogin == 1){
+			$this->assign('current_page', 'home_page');
+			$this->display();
+		}
+		else{
+			$this->error('登录后才能发表文章哦，快点去登录吧！', './Login/index');
+		}
+	}
+
+	public function articleadd(){
+		
+/*
+		if (get_magic_quotes_gpc()) {
+
+			function stripslashes_deep($value) {
+
+				return is_array($value) ? array_map('stripslashes_deep', $value) : stripslashes($value);
+
+			}
+
+
+
+			$_POST = stripslashes_deep($_POST);
+
+			$_GET = stripslashes_deep($_GET);
+
+			$_COOKIE = stripslashes_deep($_COOKIE);
+
+		}
+
+		*/
+
+			$updateTime = date("Y-m-d H:m:s");
+			$_POST['addtime'] = $updateTime;
+
+			$_POST['author'] = $_SESSION['username'];
+
+			if($_POST['title'] != null && $_POST['title'] != ''){
+				$add = M('Production')->add($_POST);
+			}
+			
+
+			if($add){
+				$this->success('文章 '.$_POST['title'].' 添加成功！', '__APP__/Profile/myWorks?member='.$_SESSION['username']);
+			}
+			else{
+				$this->error('文章 '.$_POST['title'].' 添加失败！', 'index');
+			}
+		
+
+		
+	
+	}
+}

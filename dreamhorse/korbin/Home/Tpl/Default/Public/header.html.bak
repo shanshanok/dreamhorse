@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title><{$title}></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" type="image/x-icon" href="__TMPL__/resource/images/horse1.ico" />
+<link rel="stylesheet" type="text/css" href="__TMPL__/resource/css/index.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/page.css" / >
+
+</head>
+
+<body>
+	<div id="web">
+		<div id="bghead">
+			
+			
+			<div id="header">
+				<div id="logo"><a href="__APP__"><img src="__TMPL__/resource/images/logo.png"></a></div>
+				<div id="nav" class="nav">
+					<ul>
+						<li><a href="__APP__">首页</a></li>
+						<li><a href="__APP__/Category?essaytype=pm">产品 PM</a>
+								<ul>
+									<li><a href="__APP__/Category?essaytype=productanalysis">产品分析</a>
+									</li>
+									<li><a href="__APP__/Category?essaytype=industryobservation">行业观察</a>
+									</li>
+									<li><a href="__APP__/Category?essaytype=demandanalysis">需求分析</a>
+									</li>
+								</ul>
+						</li>
+						<li><a href="__APP__/Category?essaytype=fe">前端 FE</a>
+								<ul>
+									<li><a href="__APP__/Category?essaytype=divcss">DIV+CSS</a>
+									</li>
+									<li><a href="__APP__/Category?essaytype=javascript">JavaScript</a>
+									</li>
+								</ul>
+						</li>
+						<li><a href="">成员展示</a>
+							<ul>
+								<li><a href="">Korbin</a>
+								</li>
+								<li><a href="">Katherine</a>
+								</li>
+							</ul>
+						</li>
+						<li><a href="">关于我们</a></li>
+						
+						
+					</ul>
+				</div>
+				<div id="article_add">
+					<ul>
+						<li><a href="__APP__/Articleadd">发表文章</a></li>
+					</ul>
+				</div>
+				<div id="login">
+					<ul>
+						<li><a href="#"><{$user.username}></a></li>
+						<li><a href="__ROOT__/index.php/Login/logout">退出</a></li>
+					</ul>
+					<ul>
+						
+						<li><a href="__ROOT__/index.php/Register">注册</a></li>
+						<li><a href="__ROOT__/index.php/Login">登录</a></li>
+					</ul>
+				</div>
+				
+			</div>
+		
+		</div>
+		<div id="container">
+			
