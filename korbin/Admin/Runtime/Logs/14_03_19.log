@@ -1,0 +1,21 @@
+[ 2014-03-19T09:12:09+08:00 ] 127.0.0.1 /korbin/admin.php/Login/index
+ERR: 无法加载模块:Login
+
+[ 2014-03-19T09:12:12+08:00 ] 127.0.0.1 /korbin/admin.php/Login/index
+ERR: 无法加载模块:Login
+
+[ 2014-03-19T09:12:17+08:00 ] 127.0.0.1 /korbin/admin.php/Login/index
+ERR: 无法加载模块:Login
+
+[ 2014-03-19T09:49:41+08:00 ] 127.0.0.1 /korbin/admin.php/Category?essaytype=javascript
+ERR: 无法加载模块:Category
+
+[ 2014-03-19T14:43:52+08:00 ] 127.0.0.1 /korbin/admin.php/EssayM/checkessay?essayno=8
+ERR: 非法操作:checkessay
+
+[ 2014-03-19T14:44:55+08:00 ] 127.0.0.1 /korbin/admin.php/EssayM/checkessay?essayno=8
+ERR: 非法操作:checkessay
+
+[ 2014-03-19T14:44:59+08:00 ] 127.0.0.1 /korbin/admin.php/EssayM/checkessay?essayno=8
+ERR: 非法操作:checkessay
+

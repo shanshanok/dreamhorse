@@ -1,0 +1,17 @@
+<?php
+class MembersAction extends Action{
+	public function index(){
+		$members = M('User')->select();
+		$myself = M('User')->where(array('username'=>$_SESSION['username']))->find();
+	
+		
+		$this->assign('members', $members);
+		$this->assign('current_page', 'member_page');
+		$this->assign('myself', $myself);
+		$this->assign('title', '追梦者秀 - 以梦为马');
+
+		$this->display();
+	}
+
+	
+}

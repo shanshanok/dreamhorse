@@ -1,0 +1,68 @@
+<include file="Public:header"/>
+<link rel="stylesheet" type="text/css" href="__TMPL__/resource/css/profile.css"/>
+<script type="text/javascript" src="__TMPL__/resource/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="__TMPL__/resource/js/jquery.masonry.min.js"></script>
+<script type="text/javascript" src="__TMPL__/resource/js/profile.js"></script>
+	<input type="hidden" id="currentProfilePage" value="<{$current_profile_page}>"/>
+	<div id="container-wrap">
+		<div class="inner-wrap">
+			<div class="personal-card">
+				<div class="potrait">
+					<a href="__APP__/UploadImage" target="blank">
+						<!--
+						<img src="__TMPL__/resource/images/person-default-big.png" />
+						-->
+						<img src="__ROOT__/Home/Uploads/<{$user.username}>_large.png"/>
+					</a>
+				</div>
+				<div id="personal-card-box" class="personal-card-box">
+					<form id="person-info" method="post">
+						<p class="card-info" onmouseover="showEdit(this);" onmouseout="hideEdit(this);" >
+							<span class="name personal-info"><{$user.username}></span>
+							<span class="motto personal-info "><b class="big">“</b><span  class="edit-content" id="motto"><{$user.motto}>&nbsp;</span><b class="big">”</b></span>
+							<span class="edit" onclick="editContent(this);">
+								
+									<span class="edit-inner img-edit-inner" ></span>
+									<span class="edit-inner" >修改</span>
+								
+							</span>
+						</p>
+						
+						<p class="card-info">
+							<span id="email" class="email personal-info edit-content"><{$user.email}></span>
+							
+						</p>
+						<p class="card-info" onmouseover="showEdit(this);" onmouseout="hideEdit(this);">
+							<span id="school" class="school personal-info edit-content"><{$user.school}></span>
+							<span class="edit" onclick="editContent(this);">
+								
+									<span class="edit-inner img-edit-inner" ></span>
+									<span class="edit-inner">修改</span>
+								
+							</span>
+						</p>
+					</div>
+					<br class="clear"/>
+				</form>
+				
+			</div>
+			<div class="personal-expression">
+				<p class="join-time">加入以梦为马：2014-01-17</p>
+				<ul>
+					<li>好评</li>
+					<li>活跃</li>
+				</ul>
+				<ul>
+					<li>0</li>
+					<li>0</li>
+				</ul>
+			</div>
+			<div class="profile-nav-wrap">
+				<div class="profile-nav">
+					<a class="profile-nav-item" id="timeline-title" href="__APP__/Profile">时间轴</a>
+					<span class="profile-nav-item">|</span>
+					<a class="profile-nav-item" id="works-title" href="__APP__/Profile/myWorks">文章/作品</a>
+					<br class="clear"/>
+				</div>
+			</div>
+			<div class="dividing-line"></div>

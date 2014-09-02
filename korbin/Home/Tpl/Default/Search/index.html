@@ -1,0 +1,45 @@
+<include file="Public:header"/>
+	<div id="container-wrap">	
+	<h3 class="title">搜索结果</h3>
+	<foreach name="results" item="result">
+		<div class="essay">
+							
+			<div class="essay-header">
+			<!--中间大标题下的小字 -->
+				<h2 class="essay-title"><a href="__APP__/<{$result.type}>?id=<{$result.id}>"><{$result.title}></a></h2>
+				<div class="essay-metas">
+				<span class="muted">
+				<i class="icon-user icon12"></i>
+				<a class="inline hovercolor"  href="__APP__/Profile?member=<{$result.author}>">
+					<{$result.author}>&nbsp;&nbsp;
+				</a>
+				</span>
+			
+				<span class="muted">
+				<i class="icon-time icon12"></i><{$result.addtime}>&nbsp;&nbsp;
+				</span>
+				<span class="muted">
+				<i class="icon-type icon12"></i><{$result.type}>类型&nbsp;&nbsp;
+				</span>
+			
+				<span class="muted">
+				<i class="icon-eye-open icon12"></i><{$result.visits}>&nbsp;浏览&nbsp;&nbsp;
+				</span>
+				<span class="muted">
+				<i class="icon-comment icon12"></i><{$result.commentscount}>&nbsp;评论&nbsp;&nbsp;
+				</span>
+			
+				</div>
+			</div>
+			
+			
+			<div id="essay_<{$result.id}>" class="essay-summary">
+				 <{$result.summary}>
+				 
+			</div>
+			
+		</div>
+	
+	</foreach>
+	</div>
+<include file="Public:footer"/>

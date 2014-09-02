@@ -1,0 +1,194 @@
+<div id="aside-right">
+	
+	<div id="tag">
+		
+		<p class="content-title">
+			标签
+		</p>
+		
+		<p class="tag-cloud">
+		<a href=''   title='' style=''>Front-End</a>
+		<a href=''  title='' >用户体验</a> 
+		<a href=''  title='' style=''>互联网</a> 
+		<a href=''  title='' style=''>快消</a> 
+		<a href=''  title='' style=''>供应链</a> 
+		<a href=''  title='' style=''>机械制造</a> 
+		<a href=''  title='' style=''>职业生涯</a> 
+		<a href=''  title='' style=''>房地产</a>
+		<a href=''  title='' style=''>化工</a> 
+		<a href=''  title='' style=''>技术支持</a> 
+		<a href=''  title='' style=''>PM</a> 
+		<a href=''  title='' style=''>经验分享</a> 
+		<a href=''  title='' style=''>网站设计</a> 
+		<a href=''  title='' style=''>网页设计</a> 
+		<a href=''  title='' style=''>职场</a> 
+		<a href=''  title='' style=''>交互设计</a> 
+		<a href=''  title='' style=''>产品理念</a>
+		<a href=''  title='' style=''>酷站</a>
+		</p>
+	
+	</div>
+	
+	 <div id="newest">
+		 <div id="tabs-line">
+			   <span class="current" id="tab1">
+				  最新文章
+			   </span>
+			   <span class="" id="tab2">
+				 最新作品
+			   </span>
+			   <span class="" style="border-right:none" id="tab3">
+				最新经历
+			   </span>
+		   </div>
+		   <ul class="new-article" style="display:block;">
+				
+				<!--<{$i = 1}>-->
+			
+				<foreach name='essays_newest10' item='essay'>	
+					<li class="num-<{$i}>">
+						<b><{$i++}></b>
+						<a href="__APP__/Essay?id=<{$essay.id}>"><{$essay.title}></a>
+					</li>
+				</foreach>
+			</ul>
+			<ul class="new-article" style="display:none;">
+				
+				<!--<{$i = 1}>-->
+			
+				<foreach name='works_newest10' item='work'>	
+					<li class="num-<{$i}>">
+						<b><{$i++}></b>
+						<a href="__APP__/Work?id=<{$work.id}>"><{$work.title}></a>
+					</li>
+				</foreach>
+			</ul>
+			<ul class="new-article" style="display:none;">
+				
+				<!--<{$i = 1}>-->
+			
+				<foreach name='exps_newest10' item='exp'>	
+					<li class="num-<{$i}>">
+						<b><{$i++}></b>
+						<a href="__APP__/Experience?id=<{$exp.id}>"><{$exp.title}></a>
+					</li>
+				</foreach>
+			</ul>
+		</div>
+		
+		<div id="books-recommended">
+		<p class="content-title">
+			学习用书
+		</p>
+		<div id="bookbox">
+		<ul class="content-list" id="c2">
+			<li>
+				<a target="blank" href="http://book.douban.com/subject/10546125/">
+					<div class="book-img"><img src="__TMPL__/resource/images/JavaScript高级程序设计.jpg"/></div>
+					<dl class="book-info">
+						<dt>JavaScript高级程序设计</dt>
+						<dd>
+							<strong>推荐：</strong>
+							全能前端人员必读之经典
+						</dd>
+					</dl>
+				</a>
+				<!--line-->
+				
+				<a target="blank" href="http://book.douban.com/subject/4736167/">
+					<div class="book-img"><img src="__TMPL__/resource/images/精通CSS.jpg"/></div>
+					<dl class="book-info">
+						<dt>精通CSS：高级Web标准解决方案</dt>
+						<dd>
+							<strong>推荐：</strong>
+							令人叫绝的CSS技术汇总
+						</dd>
+					</dl>
+				</a>
+			
+			<!--line-->
+			
+				<a target="blank" href="http://book.douban.com/subject/5914587/">
+					<div class="book-img"><img src="__TMPL__/resource/images/启示录.jpg"/></div>
+					<dl class="book-info">
+						<dt>启示录 : 打造用户喜爱的产品</dt>
+						<dd>
+							<strong>推荐：</strong>
+							产品经理必读书籍
+						</dd>
+					</dl>
+				</a>
+			
+			<!--line-->
+			
+				<a target="blank" href="http://book.douban.com/subject/6709783/">
+					<div class="book-img"><img src="__TMPL__/resource/images/浪潮之巅.jpg"/></div>
+					<dl class="book-info">
+						<dt>浪潮之巅</dt>
+						<dd>
+							<strong>推荐：</strong>
+							不仅讲述科技工业的历史，更重在揭示它的规律性
+						</dd>
+					</dl>
+				</a>
+			</li>
+
+
+			<li>
+				<a target="blank" href="http://book.douban.com/subject/2228378/">
+					<div class="book-img"><img src="__TMPL__/resource/images/权威指南.png"/></div>
+					<dl class="book-info">
+						<dt>JavaScript权威指南</dt>
+						<dd>
+							<strong>推荐：</strong>
+							全能前端人员必读之经典
+						</dd>
+					</dl>
+				</a>
+				<!--line-->
+				
+				<a target="blank" href="http://book.douban.com/subject/1921890/">
+					<div class="book-img"><img src="__TMPL__/resource/images/DOM编程艺术.png"/></div>
+					<dl class="book-info">
+						<dt>Javascript DOM编程艺术</dt>
+						<dd>
+							<strong>推荐：</strong>
+							简单易懂，案例集中
+						</dd>
+					</dl>
+				</a>
+			
+			<!--line-->
+			
+				<a target="blank" href="http://book.douban.com/subject/1472137/">
+					<div class="book-img"><img src="__TMPL__/resource/images/head first.png"/></div>
+					<dl class="book-info">
+						<dt>Head First HTML with CSS&XHTML</dt>
+						<dd>
+							<strong>推荐：</strong>
+							HeadFirst系列丛书
+						</dd>
+					</dl>
+				</a>
+			
+			<!--line-->
+			
+				<a target="blank" href="http://book.douban.com/subject/6025285/">
+					<div class="book-img"><img src="__TMPL__/resource/images/HTML5与CSS3权威指南.png"/></div>
+					<dl class="book-info">
+						<dt>HTML5与CSS3权威指</dt>
+						<dd>
+							<strong>推荐：</strong>
+							打造坚实基础
+						</dd>
+					</dl>
+				</a>
+			</li>
+		</ul>
+		</div>
+		<a href=""></a>
+	</div>
+
+	
+
+</div>

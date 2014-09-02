@@ -1,0 +1,96 @@
+ #preview{width:260px;height:120px;overflow:hidden;}  
+
+ #imghead {filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=image);}     
+ #username_error {color:red;  vertical-align:middle;}
+ #email_error {color:red;}
+ #pass_error {color:red;}
+ #rpass_error {color:red;}
+
+html,body,ul,li,p,h1,div,a,img,i,span,input,em {padding: 0; margin: 0;}
+html,body {line-height: 1.5; color: #333; font-size: 12px;}
+body {background: transparent; overflow: hidden;}
+body,input{font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;}
+a,label, :focus {outline: 0 none;}
+a,img {border: 0 none;}
+a {text-decoration: none;}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {a {background-color: transparent;}}
+
+/**
+::-ms-clear{display:none;}
+::-ms-reveal{display:none;}
+input::-ms-clear{display:none;}
+input::-ms-reveal{display:none;}
+.clearfix:after{display: block; content: "\20"; height: 0; clear: both; overflow: hidden; visibility: hidden;}/*ie8以上*/
+.clearfix{*zoom:1;}/*ie6、7*/
+.hide {visibility: hidden !important;}
+.ng-form-area{display: none;}
+
+
+html,body,ul,li,p,h1,div,a,img{padding: 0; margin: 0;}
+html,body{background:#f9f9f9; line-height: 1.5; color: #333; font-size: 12px;}
+body,input{font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;}
+a,label, :focus{outline:0 none;}
+a,img{border:0 none;}
+a{text-decoration: none;}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  a{background-color:transparent;}
+}
+
+body, input {
+    font-family: "Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+
+#web{
+	width:100%;
+	position:relative;
+}
+
+
+
+.top{
+	position:relative;
+}
+
+.logo{
+	width:60%;
+	margin:50px auto;
+	position:relative;
+}
+
+.center{
+	margin:0 auto;
+	width:60%;
+	height:auto;
+	min-height:600px;
+	border:1px solid;
+	position:relative;
+}
+
+.center .register-title{
+	margin: 0px 0px 10px 30px;
+	padding-top: 20px;
+	font-size: 22px;
+	font-weight: bold;
+	color:#000000;
+}
+
+.left{
+	float:left;
+	width:45%;
+}
+
+.right{
+	float:right;
+	width:45%;
+}
+
+.bottom{
+	float:left;
+	width:100%;
+}
+
+#message_LOGIN_IMMEDIATELY{
+	display:block;
+	margin:0px auto;
+}
+

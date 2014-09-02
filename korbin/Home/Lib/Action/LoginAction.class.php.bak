@@ -1,0 +1,40 @@
+<?php
+	class LoginAction extends Action {
+		function index() {
+			$this->display();
+		}
+
+		public function login(){
+			
+			$user = D('user')->field('userno, username')
+				->where(array('username'=>$_POST['username'], 'password'=>md5($_POST['password'])))->find();
+
+			//echo $user == 0;
+
+			if($user){
+				$_SESSION = $user;
+				$_SESSION['isLogin'] = 1;
+				
+				$this->redirect('./Index');
+			}
+			else{
+				$this->error('用户登录失败，请重新登录！', 'index');
+			}
+
+		}
+
+		public function logout() {
+			$username = $_SESSION['username'];
+
+			$_SESSION=array();
+			
+			if(isset($_COOKIE[session_name()])) {
+				setCookie(session_name(), '', time()-3600, '/');
+			}
+
+			session_destroy();
+
+			$this->success("亲，{$username},你退出成功喽!", __APP__);
+		}	
+
+	}

@@ -1,0 +1,23 @@
+#members{
+	width:1000px;
+	margin:0px auto;
+
+}
+
+.member{
+	width:202px;
+	height:300px;
+	margin:1em;
+	float:left;
+}
+
+.member a{
+	
+	width:162px;
+	height:162px;
+}
+
+.member a img{
+	max-width:100%;
+	max-width:100%;
+}

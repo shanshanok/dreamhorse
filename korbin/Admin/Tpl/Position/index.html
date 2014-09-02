@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>后台管理 -职场维基</title>
+		<link rel="stylesheet" type="text/css" href="__TMPL__/resource/css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/page.css" / >
+		<link rel="shortcut icon" type="image/x-icon" href="__TMPL__/resource/images/dreamcatcher.ico" />
+		<script type="text/javascript" src="__TMPL__/resource/js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="__TMPL__/resource/js/jquery.masonry.min.js"></script>
+		<script language="javascript" src="__TMPL__/resource/js/index.js"></script>
+	</head>
+	<body>
+	<div id="web">
+		
+		<div style="background: #333333; width:100%; height:100px; color:#CCCCCC"> 后台管理</div>
+		<div id="container-wrap">
+			<include file='Public:admin-left'/>
+
+            <form action="__APP__/Position/selectPosition" method="post">
+			<table align="center" class="select-table" id="select-table">
+			<tr><td>
+			<!--行业下拉框-->
+			  <div id="industry-select">  
+			  行业
+			  <select id="selectInd" name="selectInd" onchange="javascript:displayPositions()">
+					<foreach name="industry" item="ind">
+					<option> <{$ind}></option>
+					</foreach>
+					</select> 
+			  </div>
+			  <!--end行业下拉框-->
+			  </td>
+			  
+			  <td>
+			  <table align="center" class="query-table" id="query-table">
+			  <tr><td>
+			  <!--职位下拉框-->
+			     <div id="position-select">  
+                    职位
+					<select id="selectPost" name="selectPost" onchange="javascript:displayPart()">
+					<foreach name="position" item="post">
+					<option> <{$post}></option>
+					</foreach>
+					</select>   
+			  </div>
+			  <!--end职位下拉框-->
+			  </td>
+			  
+			  <td>
+			  <!--类别下拉框-->
+			  <div id="part-select">  
+                    类别
+					<select id="selectPart" name="selectPart">
+					<foreach name="part" item="pa">
+					<option> <{$pa}></option>
+					</foreach>
+					</select>   
+			  </div>
+			  
+			 
+			  <!--end类别下拉框-->
+			  </td>
+			  <td>
+			  <input type="submit" value="查询" >
+			  </td></tr>
+			  </table>
+			  </td>
+			  </tr>
+			  </table>
+			  </form>
+			  
+			  <!--正式版本信息-->
+			  
+			  <table class="fromal-table" align="center" id="formal-table" border="2">
+			  
+			  
+			  <caption align="center">正式版本信息</caption>
+			  <tr align="center">
+			  <!--标题-->
+			  <div class="infoTitle">
+			  <td>编号</td>
+			  <td>名称</td>
+			  <td>行业</td>
+			  <td>作者</td>
+			  <td>时间</td>
+			  <td>类别</td>
+			  <td>评分</td>
+			  <td>操作</td>
+			  </div>
+			  <!--end标题-->
+			  </tr>
+			  
+			  <tr>
+			  <!--信息内容-->
+
+			  <div id="formalInfo">
+			  
+			  <td><{$formal.editno}></td><!--编号-->
+			  <td><{$formal.postname}></td><!--职位名称-->
+			  <td><{$formal.industry}></td><!--行业-->
+			  <td><{$formal.author}></td><!--作者-->
+			  <td><{$formal.addtime}></td><!--时间-->
+			  <td><{$formal.editpart}></td><!--类别-->
+			  <td><{$formal.score}></td><!--评分-->
+			  <td><!--操作-->
+			  <span class="operation-href"> <a href="__APP__/PositionDisplay?formalno=<{$formal.editno}>&editno=<{$formal.editno}>" >查看</a></span>
+			  <span class="operation-href"> <a href="__APP__/Position/deleteHis?editno=<{$formal.editno}>" >删除</a></span>
+			  </td>
+			  
+			  </div>
+
+			  <!--end信息内容-->
+			  </tr>
+			  
+			  
+			  </table>
+			  <!--end正式版本信息-->
+			  <br /><br />
+			  
+			  <table class="history-table" align="center" id="formal-table" border="2">
+			  <!--历史版本展示-->
+			  
+			  
+			  <caption align="center">历史版本信息</caption>
+			  <tr align="center">
+			  <!--标题-->
+			  <div class="infoTitle">
+			  <td>编号</td>
+			  <td>名称</td>
+			  <td>行业</td>
+			  <td>作者</td>
+			  <td>时间</td>
+			  <td>类别</td>
+			  <td>评分</td>
+			  <td>操作</td>
+			  </div>
+			  <!--end标题-->
+			  </tr>
+			  <foreach name="editHis" item="editHis">
+			<tr>
+			  <!--历史版本信息-->
+			  
+			  <div id="hisList-content">
+			  <td><{$editHis.editno}></td><!--编号，正式默认为0-->
+			  <td><{$editHis.postname}></td><!--职位名称-->
+			  <td><{$editHis.industry}></td><!--行业-->
+			  <td><{$editHis.author}></td><!--作者-->
+			  <td><{$editHis.addtime}></td><!--时间-->
+			  <td><{$editHis.editpart}></td><!--类别-->
+			  <td><{$editHis.score}></td><!--评分-->
+			  <td><!--操作-->
+			  <span class="operation-href"> <a href="__APP__/Position/setFormal?editno=<{$editHis.editno}>&formalno=<{$formal.editno}>" >设为正式版本</a></span>
+			  <span class="operation-href"> <a href="__APP__/PositionDisplay?formalno=<{$formal.editno}>&editno=<{$editHis.editno}>" >查看</a></span>
+			  <span class="operation-href"> <a href="__APP__/Position/deleteHis?editno=<{$editHis.editno}>" >删除</a></span>
+			  </td>
+			  
+			   </div>
+			  
+			  </tr>
+			  </foreach>
+			  
+			</table>
+
+			
+		</div>
+		
+	<include file="Public:admin-footer"/>

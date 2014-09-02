@@ -1,0 +1,50 @@
+<?php
+class UploadImageAction extends Action {
+
+	public function index(){
+		$myself = M('User')->where(array('username'=>$_SESSION['username']))->find();
+		//消息提醒
+			$num = M('Message')->where(array('message_author'=>$_SESSION['username']))->count();
+			$this->assign('num',$num);
+			$messagedetail= M('Message')->where(array('message_author'=>$_SESSION['username']))->select();
+            $this->assign('messagedetail', $messagedetail);
+		$this->assign('title', '上传头像 - 以梦为马');
+		$this->assign('myself', $myself);
+		$this->assign('current_page', 'home_page');
+		$this->display();
+	}
+
+    // 处理表单数据
+    public function upfile() {
+		$path = APP_PATH."Uploads/";//如果想把图片放到网站跟目录的Uploads文件夹中，应该写那个ThinkPHP系统常量？
+       
+		$username = $_SESSION['username'];
+
+		$file_src = "src.png"; 
+		$filename162 = $username."_large.png"; 
+		$filename48 = $username."_middle.png"; 
+		$filename20 = $username."_small.png";   
+
+		$src=base64_decode($_POST['pic']);
+		$pic1=base64_decode($_POST['pic1']);   
+		$pic2=base64_decode($_POST['pic2']);  
+		$pic3=base64_decode($_POST['pic3']);  
+
+
+		if($src) {
+		file_put_contents($file_src,$src);
+		}
+
+		file_put_contents($path.$filename162,$pic1);
+		file_put_contents($path.$filename48,$pic2);
+		file_put_contents($path.$filename20,$pic3);
+
+		$rs['status'] = 1;
+		
+
+		echo json_encode($rs);
+
+		
+    }
+
+}

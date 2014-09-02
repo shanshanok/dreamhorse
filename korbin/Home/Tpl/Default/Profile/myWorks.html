@@ -1,0 +1,87 @@
+<include file="Public:profile-top"/>
+				<div id="my-works">
+				
+					<div class="inner">
+					
+						<p class="content-title"><{$content_title}></p>
+					
+						<foreach name='essays' item='essay'>
+							<div class="essay">
+								<div class="essay-header">
+							<!--中间大标题下的小字 -->
+								<h2 class="essay-title"><a href="__APP__/<{$essay.type}>?id=<{$essay.id}>"><{$essay.title}></a></h2>
+								<div class="essay-metas">
+								<span class="muted">
+								<i class="icon-user icon12"></i>
+								<a class="inline hovercolor"  href="__APP__/Profile?member=<{$essay.author}>">
+									<{$essay.author}>&nbsp;&nbsp;
+								</a>
+								</span>
+							
+								<span class="muted">
+									<i class="icon-time icon12"></i><{$essay.addtime}>&nbsp;&nbsp;
+									</span>
+									<span class="muted">
+									<i class="icon-type icon12"></i><{$essay.type}>类型&nbsp;&nbsp;
+									</span>
+									
+									<span class="muted">
+									<i class="icon-eye-open icon12"></i><{$essay.visits}>&nbsp;浏览&nbsp;&nbsp;
+									</span>
+									<span class="muted">
+									<i class="icon-comment icon12"></i><{$essay.commentscount}>&nbsp;评论&nbsp;&nbsp;
+									</span>
+							
+									<div class="right" name="edit" id="edit">
+										<a  href="__APP__/<{$essay.type}>Edit?id=<{$essay.id}>">编辑</a>
+										<a  href="__APP__/<{$essay.type}>Edit/<{$essay.type}>Delete?id=<{$essay.id}>">删除</a>
+										<input type="hidden"  id="targetno" value="<{$essay.essayno}>"/>
+										<input type="hidden" id="motto" value="<{$myself.motto}>"/>
+										<input id="commenttype" type="hidden" value="essaycomment"/>
+									</div>
+								</div>
+								
+							</div>
+								<!--
+								<div class="essay-header">
+									<h2 class="essay-title"><a href="__APP__/Essay?essayno=<{$essay.essayno}>"><{$essay.title}></a></h2>
+									<div class="essay-metas">
+										<div class="left">
+											作者：<{$essay.author}>&nbsp;&nbsp;类型：<{$essay.type}>&nbsp;&nbsp;时间：<{$essay.addtime}>
+										</div>
+										<div class="right" name="edit" id="edit">
+											<a  href="__APP__/ArticleEdit?essayno=<{$essay.essayno}>">编辑</a>
+											<a  href="__APP__/ArticleEdit/articleDelete?essayno=<{$essay.essayno}>">删除</a>
+										</div>
+									</div>
+								</div>
+								-->
+								
+								<div id="essay_<{$essay.essayno}>" class="essay-summary">
+									 <{$essay.summary}>
+									 
+								</div>
+								<div class="attachment">
+									<a href="<{$essay.attachment}>" class="alink"><{$essay.attachment}></a>
+								</div>
+								
+							</div>
+							<input id="author" type="hidden" value="<{$essay.author}>"/>
+						</foreach>
+						<div id="pages-nav" class="black2"><{$page}></div>
+					
+					
+						</div>
+				
+				</div>
+
+
+
+			</div>
+				<br class="clear"/>
+			</div>
+		</div>
+
+
+
+<include file="Public:footer"/>

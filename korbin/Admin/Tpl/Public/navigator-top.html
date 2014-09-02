@@ -1,0 +1,53 @@
+<body>
+	<div id="web">
+			<div id="bghead">
+				
+				<input type="hidden" id="currentPage" value="<{$current_page}>"/> 
+				
+				<div id="header">
+					<div id="logo"><a href="__APP__"><img src="__TMPL__/resource/images/logo.png"></a></div>
+					<div id="nav" class="nav">
+						<ul>
+							<li><a id="home_page" href="__APP__">首页</a></li>
+							<li><a id="careerwiki_page" href="__APP__/CareerWiki">职场维基</a></li>
+							<!--
+							<li><a id="careerbaike_page" href="__APP__/CareerWiki">职场百科</a></li>
+							-->
+							<li><a id="member_page" href="__APP__/Members">追梦者</a></li>
+							<li><a id="aboutus_page" href="__APP__/AboutUs">关于我们</a></li>
+							
+							
+						</ul>
+					</div>
+					<div id="contribute">
+						<ul>
+							<li>
+								<a href="">投稿</a>
+								<ul>
+									<li><a id="article-add" href="__APP__/EssayAdd">发表文章</a></li>
+									<li><a id="work-add" href="__APP__/WorkAdd">上传作品</a></li>
+									<li><a id="experience-add" href="__APP__/ExperienceAdd">添加经历</a></li>
+									
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div id="login">
+						<ul>
+							<div id="part-logout">
+								<li><a href="__ROOT__/index.php/Profile"><{$myself.username}></a></li>
+								<li><a href="__ROOT__/index.php/Login/logout">退出</a></li>
+							</div>
+							<div id="part-login">
+								<li><a href="__ROOT__/index.php/Register">注册</a></li>
+								<li><a href="__ROOT__/index.php/Login">登录</a></li>
+							</div>
+						</ul>
+						<!--使用hidden标签来获取用户登录信息，用于js获取div #login中part-login和part-logout的显示与否-->
+						<input type="hidden" id="myself" value="<{$myself.username}>"/>
+					</div>
+					
+				</div>
+			
+			</div>
+			<div id="container">

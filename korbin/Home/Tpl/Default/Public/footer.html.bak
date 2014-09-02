@@ -1,0 +1,76 @@
+
+	<div class="footer">
+				<div id="footer-bg">
+					<div id="footer-inner">
+						
+							<div class="inner-block">
+								<p>关于我们</p>
+								<div class="footer-content">
+								“以梦为马”职业生涯网站是一个以职业生涯记录与分享、求职准备、职业生涯规划为主题的网站。
+为职场人士、在校学生等用户群提供了一个记录和分享自己职业生涯、了解各行业职位、规划职业生涯、为求职做相关准备的平台。
+								</div>
+							</div>
+							<div class="inner-block">
+								<p>我们的团队</p>
+								<div class="footer-content">
+									<a class="pic-link-small" href="__APP__/Profile?member=korbinzhao"><img title="korbinzhao" src="korbinzhao" onerror="this.src='__TMPL__/resource/images/person-default-large.png'" src="__ROOT__/Home/Uploads/korbinzhao_large.png"/></a>
+									<a class="pic-link-small" href="__APP__/Profile?member=porkzhao"><img title="porkzhao" src="porkzhao" onerror="this.src='__TMPL__/resource/images/person-default-large.png'" src="__ROOT__/Home/Uploads/porkzhao_large.png"/></a>
+									<a class="pic-link-small" href="__APP__/Profile?member=Doris"><img title="Doris" src="Doris" onerror="this.src='__TMPL__/resource/images/person-default-large.png'" src="__ROOT__/Home/Uploads/Doris_large.png"/></a>
+									<a class="pic-link-small" href="__APP__/Profile?member=shanshan"><img title="shanshan" src="shanshan" onerror="this.src='__TMPL__/resource/images/person-default-large.png'" src="__ROOT__/Home/Uploads/shanshan_large.png"/></a>
+									<a class="pic-link-small" href="__APP__/Profile?member=minmin"><img title="minmin" src="minmin" onerror="this.src='__TMPL__/resource/images/person-default-large.png'" src="__ROOT__/Home/Uploads/minmin_large.png"/></a>
+									<a class="pic-link-small" href="__APP__/Profile?member=tinker"><img title="tinker" src="tinker" onerror="this.src='__TMPL__/resource/images/person-default-large.png'" src="__ROOT__/Home/Uploads/minmin_large.png"/></a>
+									
+								</div>
+							</div>
+							<div class="inner-block">
+								<p>大家在关注</p>
+								<div>
+								    <div class="col">
+									<a href="http://www.whycss.com/">前端网址导航</a>
+									<a href="http://ued.taobao.org/blog/">淘宝UED</a>
+									<a href="http://adc.alibabatech.org/">阿里技术嘉年华</a>
+								    <a href="http://www.w3.org/">W3C</a>
+									
+									</div>
+								
+								    <div class="col">
+									<a href="http://www.w3cfuns.com/">w3cfuns</a>
+									<a href="http://www.w3cplus.com/">w3cplus</a>
+								    <a href="http://www.daqianduan.com/">大前端</a>
+									<a href="http://www.uisdc.com/">优设</a>
+									</div>
+									
+								
+								</div>
+								
+								
+							</div>
+							<div class="inner-block">
+								<p>Korbin Zhao</p>
+								<div class="footer-content">
+									<a class="pic-link-big" href="__APP__/Profile?member=korbinzhao"><img src="__TMPL__/resource/images/korbinzhao.png"/></a>
+									<a class="right white" href="__APP__/Profile?member=korbinzhao">联系站长：Korbin Zhao</a>
+								</div>
+							</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p class="copyright">Copyright © 2014 DreamCatcher Team. All rights reserved.</p>
+				</div>
+				
+				
+					<a class="back2top" href="#"></a>
+				
+				
+	</div>
+	
+</div>
+
+<script type="text/javascript" src="__TMPL__/resource/js/post.js"></script>
+	<script type="text/javascript" src="__TMPL__/resource/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="__TMPL__/resource/js/jquery.masonry.min.js"></script>
+		<script type="text/javascript" src="__TMPL__/resource/js/index.js"></script> 
+		
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+
+
+
+#content-article-add{
+	width:96%;
+	margin:0px auto;
+	padding:0px 15px;}
+
+span.headline{
+	line-height:36px;
+}
+
+input.essay-title{
+	
+	height:25px;
+	width:500px;
+	font-size:15px;
+	line-height:20px;
+	padding:1px 3px;
+}
+
+select{
+	font-size:15px;
+	padding:2px;
+	min-width:30px;
+	height:24px;
+	line-height:24px;
+	}
+
+
+
+
+#essay-abstract{
+	display:block;
+	min-height:300px;
+	width:60%;/*使摘要的输入宽度能够和文章分类页面展示宽度保持一致*/
+}
+
+	
+.btn-submit{
+	line-height:20px;
+	font-size:16px;
+	margin-top:10px;
+	padding:4px 12px;
+	float:left;
+}

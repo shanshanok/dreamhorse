@@ -1,0 +1,239 @@
+[ 2014-02-13T22:42:03+08:00 ] 127.0.0.1 /korbin/admin.php/Essay
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.007228s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007444s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.013959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014303s ]
+ERR: 无法加载模块:Essay
+
+[ 2014-02-13T22:55:55+08:00 ] 127.0.0.1 /korbin/admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.029965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.030315s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Admin/Tpl/Public/header.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory C:\AppServ\www\korbin\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(./Admin/Tpl/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory C:\AppServ\www\korbin\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.145141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.145520s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.016328s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.020221s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.015396s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.108592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.161838s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.051400s ]
+INFO: [ view_end ] --END-- [ RunTime:0.051622s ]
+
+[ 2014-02-13T22:58:22+08:00 ] 127.0.0.1 /korbin/admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.011164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011983s ]
+ERR: 模板不存在[./Admin/Tpl/Index/index.html]
+
+[ 2014-02-13T23:00:37+08:00 ] 127.0.0.1 /korbin/admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002202s ]
+ERR: 模板不存在[./Admin/Tpl/Index/index.html]
+
+[ 2014-02-13T23:00:39+08:00 ] 127.0.0.1 /korbin/admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005422s ]
+ERR: 模板不存在[./Admin/Tpl/Index/index.html]
+
+[ 2014-02-13T23:00:44+08:00 ] 127.0.0.1 /korbin/admin.php/Index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.051777s ]
+INFO: [ route_check ] --END-- [ RunTime:0.052294s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002934s ]
+ERR: 模板不存在[./Admin/Tpl/Index/index.html]
+
+[ 2014-02-13T23:01:15+08:00 ] 127.0.0.1 /korbin/admin.php/Index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006296s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006923s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.010212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010479s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title C:\AppServ\www\korbin\Admin\Runtime\Cache\20eabf8d43f497715f3e1a7ec1a2f00f.php 第 4 行.
+NOTIC: [8] Undefined variable: current_page C:\AppServ\www\korbin\Admin\Runtime\Cache\20eabf8d43f497715f3e1a7ec1a2f00f.php 第 16 行.
+NOTIC: [8] Undefined variable: myself C:\AppServ\www\korbin\Admin\Runtime\Cache\20eabf8d43f497715f3e1a7ec1a2f00f.php 第 40 行.
+NOTIC: [8] Undefined variable: myself C:\AppServ\www\korbin\Admin\Runtime\Cache\20eabf8d43f497715f3e1a7ec1a2f00f.php 第 49 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.069356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069689s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003350s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.006310s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003478s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.008793s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.023399s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.006837s ]
+INFO: [ view_end ] --END-- [ RunTime:0.007041s ]
+
+[ 2014-02-13T23:01:59+08:00 ] 127.0.0.1 /korbin/admin.php/Index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.016940s ]
+INFO: [ route_check ] --END-- [ RunTime:0.017723s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.016099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016375s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title C:\AppServ\www\korbin\Admin\Runtime\Cache\20eabf8d43f497715f3e1a7ec1a2f00f.php 第 4 行.
+NOTIC: [8] Undefined variable: current_page C:\AppServ\www\korbin\Admin\Runtime\Cache\20eabf8d43f497715f3e1a7ec1a2f00f.php 第 16 行.
+NOTIC: [8] Undefined variable: myself C:\AppServ\www\korbin\Admin\Runtime\Cache\20eabf8d43f497715f3e1a7ec1a2f00f.php 第 40 行.
+NOTIC: [8] Undefined variable: myself C:\AppServ\www\korbin\Admin\Runtime\Cache\20eabf8d43f497715f3e1a7ec1a2f00f.php 第 49 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.100193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100420s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.007481s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.018327s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.007499s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.022730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.057022s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.008623s ]
+INFO: [ view_end ] --END-- [ RunTime:0.009282s ]
+
+[ 2014-02-13T23:02:26+08:00 ] 127.0.0.1 /korbin/admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015622s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title C:\AppServ\www\korbin\Admin\Runtime\Cache\20eabf8d43f497715f3e1a7ec1a2f00f.php 第 4 行.
+NOTIC: [8] Undefined variable: current_page C:\AppServ\www\korbin\Admin\Runtime\Cache\20eabf8d43f497715f3e1a7ec1a2f00f.php 第 16 行.
+NOTIC: [8] Undefined variable: myself C:\AppServ\www\korbin\Admin\Runtime\Cache\20eabf8d43f497715f3e1a7ec1a2f00f.php 第 40 行.
+NOTIC: [8] Undefined variable: myself C:\AppServ\www\korbin\Admin\Runtime\Cache\20eabf8d43f497715f3e1a7ec1a2f00f.php 第 49 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.117976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118206s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.012580s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.011285s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.005226s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.010105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.039801s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.008464s ]
+INFO: [ view_end ] --END-- [ RunTime:0.008765s ]
+
+[ 2014-02-13T23:02:27+08:00 ] 127.0.0.1 /korbin/admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005095s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title C:\AppServ\www\korbin\Admin\Runtime\Cache\20eabf8d43f497715f3e1a7ec1a2f00f.php 第 4 行.
+NOTIC: [8] Undefined variable: current_page C:\AppServ\www\korbin\Admin\Runtime\Cache\20eabf8d43f497715f3e1a7ec1a2f00f.php 第 16 行.
+NOTIC: [8] Undefined variable: myself C:\AppServ\www\korbin\Admin\Runtime\Cache\20eabf8d43f497715f3e1a7ec1a2f00f.php 第 40 行.
+NOTIC: [8] Undefined variable: myself C:\AppServ\www\korbin\Admin\Runtime\Cache\20eabf8d43f497715f3e1a7ec1a2f00f.php 第 49 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044147s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.005673s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.008622s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001673s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.019810s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002769s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003025s ]
+
+[ 2014-02-13T23:02:28+08:00 ] 127.0.0.1 /korbin/admin.php/Category?essaytype=pm
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.018881s ]
+INFO: [ route_check ] --END-- [ RunTime:0.019176s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004571s ]
+ERR: 无法加载模块:Category
+
+[ 2014-02-13T23:06:40+08:00 ] 127.0.0.1 /korbin/admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.025873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026149s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.084361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084667s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.006444s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.009600s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.008180s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.014945s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.039883s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.019292s ]
+INFO: [ view_end ] --END-- [ RunTime:0.019639s ]
+
+[ 2014-02-13T23:08:29+08:00 ] 127.0.0.1 /korbin/admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.013585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013848s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.104643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105048s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.017961s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.030902s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.022103s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.019849s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.091572s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.017061s ]
+INFO: [ view_end ] --END-- [ RunTime:0.017864s ]
+
+[ 2014-02-13T23:29:45+08:00 ] 127.0.0.1 /korbin/admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.023158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023564s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.084009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084369s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.011524s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.006810s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.010472s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.005559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.035310s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.010173s ]
+INFO: [ view_end ] --END-- [ RunTime:0.010477s ]
+
+[ 2014-02-13T23:29:47+08:00 ] 127.0.0.1 /korbin/admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003138s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035100s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002540s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002346s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.006830s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.007610s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020302s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.010358s ]
+INFO: [ view_end ] --END-- [ RunTime:0.010577s ]
+
+[ 2014-02-13T23:29:48+08:00 ] 127.0.0.1 /korbin/admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006773s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.059589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059876s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003580s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002873s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.006616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016785s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003082s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003316s ]
+

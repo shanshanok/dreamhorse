@@ -1,0 +1,105 @@
+<div id="comment"  name="comment">
+	<form id="form-add-comment" >
+		<div id="add-comment" >
+			 <div >
+				<img  src="__ROOT__/Home/Uploads/<{$myself.username}>_middle.png"/>
+				<textarea id="commenttext" /></textarea>
+				
+				
+			</div>
+			<div  id="tishi">
+				<label id="result" ></label>
+			</div>
+			<div  >
+				<input id="commentBtn" type="button" value="评论"  onclick="addComment();" />
+			</div>
+			<br class="clear"/>
+		</div >
+	</form>	
+		
+	
+		<div id="display-comment" >
+			<br id="insert-new-comment"/>
+			<div class="display-each-comment" id="one-comment-display">
+					<div id="display-detail">
+						<div class="potrait">
+							<a href="__APP__/Profile?member=<{$comment.username}>"  
+										id="commentauthor" value="<{$comment.username}>" title="进入个人主页">
+										<img class="potrait-middlepic" src="__ROOT__/Home/Uploads/<{$comment.username}>_middle.png"/>
+							</a>
+							
+							<div class="left">
+								<div class="line-one">
+								<p> 
+									<a class="username inline" href="__APP__/Profile?member=<{$comment.username}>"  
+										 value="<{$comment.username}>" title="进入个人主页"><{$comment.username}></a>
+										<input id="commentauthor" type="hidden" value="<{$comment.username}>"/>
+										
+								</p>
+							
+								<p class="motto"><{$comment.authormotto}></p>
+									
+								</div>
+								<div class="line-two">
+									<{$comment.commenttext}>
+									
+								</div>
+							</div>
+						</div>	
+
+						
+					</div>
+					<div id="display-comment-bottom" >
+						 <p id="time" class="time left"><{$comment.addtime}> </p> 
+						 <a class="praise inline" href="__APP__/Comment/commentDelete?commentno=<{$comment.commentno}>">删除</a> 
+						<!--
+						 <a href="#" class="left praise">顶 </a>
+						 <a href="#" class="left share"> 分享</a>	
+						 <a href="#comment" class="left share" onclick="recomment();"> 回复</a>	
+						 -->
+					
+					</div>
+					<br class="clear"/>
+				</div>
+			<volist name="comments" id="comment">
+				 <div class="display-each-comment">
+					<div id="display-detail">
+						<div class="potrait">
+							<a href="__APP__/Profile?member=<{$comment.username}>"  
+										id="commentauthor" value="<{$comment.username}>" title="进入个人主页">
+										<img src="__ROOT__/Home/Uploads/<{$comment.username}>_middle.png"/>
+							</a>
+							
+							<div class="line">
+								<div class="line-one">
+								<p> 
+									<a class="username inline" href="__APP__/Profile?member=<{$comment.username}>"  
+										 value="<{$comment.username}>" title="进入个人主页"><{$comment.username}></a>
+										<input name="commentauthor" type="hidden" value="<{$comment.username}>"/>
+								</p>
+							
+								<p class="motto"><{$comment.authormotto}></p>	
+								</div>
+								<div class="line-two"><{$comment.commenttext}></div>
+							</div>
+						</div>	
+
+						
+					</div>
+					<div id="display-comment-bottom" >
+						 <p id="time" class="time left"><{$comment.addtime}> </p> 
+						  <a class="praise deleteLink inline" name="delete" href="__APP__/Comment/commentDelete?commentno=<{$comment.commentno}>">删除</a> 
+						<!--
+						 <a href="#" class="left praise">顶 </a>
+						 <a href="#" class="left share"> 分享</a>	
+						 <a href="#comment" class="left share" onclick="recomment();"> 回复</a>	
+						 -->
+					
+					</div>
+					<br class="clear"/>
+				</div>
+			</volist >
+			
+	   </div>
+		
+</div>

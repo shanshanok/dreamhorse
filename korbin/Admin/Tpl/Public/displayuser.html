@@ -1,0 +1,39 @@
+ <div id="essay-list">
+		<table border="1" id="essay-table"> 
+			  	 <div id="essay-list-title">
+			  <tr class="table-head">
+			   <th class="userno">编号</th>
+			   <th class="username">用户名</th>
+			   <th class="email">邮箱</th>
+			   
+			   <th class="motto">座右铭</th>
+			   <th class="organiaztion">组织</th>
+			   <th class="industry">行业</th>
+			   <th  class="postname" >职位</th>
+			   <th class="reputation"> 好评</th>
+			    <th class="vitality"> 活跃度</th>
+			     <th class="doo"> 操作</th>
+			</tr>
+			   </div>
+			 
+			  <volist name="essays2" id="essay2">
+			   <div id="essay-list-content">
+			   	<tr class="table-unit">
+			  <td class="userno"><{$essay2.userno}></td>
+			   <td class="username"><a href="__APP__/EssayDisplay?essayno=<{$essay2.userno}>"><{$essay2.username}></a></td>
+			   <td class="email"><{$essay2.email}></td>
+			  
+
+			   <td class="motto"><{$essay2.motto}></td>
+			   <td class="organiaztion"><{$essay2.organiaztion}></td>
+			   <td class="industry"><{$essay2.industry}></td>
+			   <td class="postname"><{$essay2.pastname}></td>
+			   <td  class="reputation" ><{$essay2.reputation}></td>
+			   <td  class="vitality" ><{$essay2.vitality}></td>
+               <td class="docheck"> <a href=" __APP__/UserM/userDelete?id=<{$essay2.userno}> & username=<{$essay2.username}>" >删除</a></td>
+			   
+			</tr>
+			   </div>
+			  </volist >
+			</table>	    
+			  </div>

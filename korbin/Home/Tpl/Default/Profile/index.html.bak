@@ -1,0 +1,49 @@
+<include file="Public:profile-top"/>
+			<div id="timeline">
+					
+					<div id="add-timeline">
+						<p class="add-title">添加我的时间轴</p>
+						
+						<a href="__APP__/ExperienceAdd">
+							<img src="__TMPL__/resource/images/essayAdd.png"/>
+							<p>添加经历</p>
+						</a>
+						
+						<a href="__APP__/Articleadd">
+							<img src="__TMPL__/resource/images/essayAdd.png"/>
+							<p>添加作品</p>
+						</a>
+						
+						<a href="__APP__/Articleadd">
+							<img src="__TMPL__/resource/images/essayAdd.png"/>
+							<p>添加文章</p>
+						</a>
+						<br class="clear"/>
+					</div>
+					<div id="timeline-inner">
+					
+			
+						<!--<{$i=0}>-->
+						<foreach name="experiences" item="exp">
+							<div  class="timeline-content">
+								<div value="<{$i}>" class="inner">
+									<p class="exp-title"><{$exp.experiencetitle}></p>
+									<p class="exp-meta">No<{$i++}>:&nbsp;&nbsp;&nbsp;2014-01-12 23:52</p>
+									<div class="exp-abstract"><{$exp.experienceabstract}></div>
+									<br class="clear"/>
+								</div>
+							
+							</div>
+						
+						</foreach>
+						<br class="clear"/>
+					</div>
+					<br class="clear"/>
+					
+			</div>
+		</div>
+			<br class="clear"/>
+		</div>
+	</div>
+
+<include file="Public:footer"/>

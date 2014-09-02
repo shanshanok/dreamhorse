@@ -1,0 +1,102 @@
+<include file="Public:header"/>
+		
+		<div id="container-wrap">
+			
+			<div id="main">
+				<div id="content-essay">
+						<div class="essay">
+							
+							<div class="essay-header">
+							<!--中间大标题下的小字 -->
+								<h2 class="essay-title"><a href="__APP__/Essay?id=<{$essay.id}>"><{$essay.title}></a></h2>
+								<div class="essay-metas">
+								<span class="muted">
+								<i class="icon-user icon12"></i>
+								<a class="inline hovercolor"  href="__APP__/Profile?member=<{$essay.author}>">
+									<{$essay.author}>&nbsp;&nbsp;
+								</a>
+								</span>
+							
+								<span class="muted">
+									<i class="icon-time icon12"></i><{$essay.addtime}>&nbsp;&nbsp;
+									</span>
+									<span class="muted">
+									<i class="icon-type icon12"></i><{$essay.type}>类型&nbsp;&nbsp;
+									</span>
+								
+									<span class="muted">
+									<i class="icon-eye-open icon12"></i><{$essay.visits}>&nbsp;浏览&nbsp;&nbsp;
+									</span>
+									<span class="muted">
+									<i class="icon-comment icon12"></i><{$essay.commentscount}>&nbsp;评论&nbsp;&nbsp;
+									</span>
+									
+									<div class="right" name="edit" id="edit">
+										<a  href="__APP__/EssayEdit?id=<{$essay.id}>">编辑</a>
+										<a  href="__APP__/EssayEdit/essayDelete?id=<{$essay.id}>">删除</a>
+										<input type="hidden"  id="targetno" value="<{$essay.id}>"/>
+										<input type="hidden" id="motto" value="<{$myself.motto}>"/>
+										<input id="commenttype" type="hidden" value="essaycomment"/>
+									</div>
+								</div>
+								
+							</div>
+							
+							<!--
+							<div class="essay-header">
+								<h2 class="essay-title">
+									<a href=""><{$essay.title}></a>
+									
+								</h2>
+								<div class="essay-metas">
+									<div class="left">
+										作者：<{$essay.author}>&nbsp;&nbsp;类型：<{$essay.type}>&nbsp;&nbsp;时间：<{$essay.addtime}>
+									</div>
+									<div class="right" name="edit" id="edit">
+										<a  href="__APP__/ArticleEdit?id=<{$essay.id}>">编辑</a>
+										<a  href="__APP__/ArticleEdit/articleDelete?id=<{$essay.id}>">删除</a>
+										<input type="hidden"  id="targetno" value="<{$essay.id}>"/>
+										<input type="hidden" id="motto" value="<{$myself.motto}>"/>
+										<input id="commenttype" type="hidden" value="essaycomment"/>
+									</div>
+								</div>
+								
+							</div>
+							-->
+							
+							<div class="essay-summary">
+								<p><{$essay.content}></p>
+							</div>
+							
+							<div class="box">
+								<input type="hidden" id="praisetype" value="essaypraise"/>
+								<div class="pos-btn" id="like" onclick="addLike(this)">
+									<p id="add1" class="pos-btn">+1</p>
+									<i class="icon-like icon12" title="喜欢"></i>
+									<p id="add1" class="pos-btn">+1</p>
+									<span id="likecount"  class="praisecount"><{$likecount}></span>
+								</div>		
+								<div class="pos-btn" id="dislike" onclick="addDislike(this);">
+								
+									<i class="icon-dislike icon12" title="没劲"></i>
+									<p id="add2" class="pos-btn">+1</p>
+									<span id="dislikecount" class="praisecount"><{$dislikecount}></span>
+								</div>
+							</div>
+						</div>
+				</div>
+				<include file="public:comment"/>
+								
+			</div>
+							
+			<include file="Public:aside-right"/>
+			
+			<input id="author" type="hidden" value="<{$essay.author}>"/>
+			<br class="clear"/><!--因为浮动元素不占据空间，所以容器元素不包围他们。添加一个进行清理的空元素可以迫使容器元素包围浮动元素-->
+		</div>
+		
+
+			
+<include file="Public:footer"/>
+		
+

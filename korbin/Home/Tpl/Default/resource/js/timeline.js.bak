@@ -1,0 +1,39 @@
+$(document).ready(function(){
+    
+	//FloatDetermine();
+
+	
+	//alert('HELLO WORLD!');
+	
+
+	$('#timeline').masonry({itemSelector : '.timeline-content'});
+
+	
+});
+
+function ArrowPoints(){
+	var timelineContent = $("#timeline").find(".inner");
+	
+	//alert(timelineContent);
+	
+	$.each(timelineContent, function(){
+		var value = $(this).attr("value");
+
+		alert(value);
+
+		if(value % 2 == 0){
+			html = "<span class='rightCorner'></span>";
+			$(this).prepend(html);
+		}
+		else{
+			html = "<span class='leftCorner'></span>";
+			$(this).prepend(html);
+		}
+	});
+
+	
+}
+
+
+
+

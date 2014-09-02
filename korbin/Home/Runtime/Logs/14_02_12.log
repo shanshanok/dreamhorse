@@ -1,0 +1,6 @@
+[ 2014-02-12T18:37:48+08:00 ] 127.0.0.1 /korbin/index.php/Profile/Profile/modifyInfo?name=motto&info=&nbsp;
+ERR: 非法操作:Profile
+
+[ 2014-02-12T18:38:06+08:00 ] 127.0.0.1 /korbin/index.php/Profile/Profile/modifyInfo?name=motto&info=%E8%A6%81%E5%A5%BD&nbsp;
+ERR: 非法操作:Profile
+

@@ -1,0 +1,8 @@
+function selectEssays()
+{    alet("value");
+	
+	var selectlist = document.getElementById("essay-list"); 
+    selectlist.style.display="block";
+   
+   
+}

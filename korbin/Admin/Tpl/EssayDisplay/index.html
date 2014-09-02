@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>后台管理-文章审核</title>
+		<link rel="stylesheet" type="text/css" href="__TMPL__/resource/css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/page.css" / >
+		<link rel="shortcut icon" type="image/x-icon" href="__TMPL__/resource/images/dreamcatcher.ico" />
+	</head>
+	<body>
+	<div id="web">
+		<div style="background: #333333; width:100%; height:100px; color:#CCCCCC"> 后台管理</div>
+		<div id="container-wrap">
+			<include file='Public:admin-left'/>
+			
+			<form action="__APP__/EssayDisplay/checkessay" method="post">
+			<div id="main">
+			  <div id="essaycontent">
+			     <input  id="check1" type="submit" value="审核通过"/>
+			     <div id="essayno" >文章编号：<{$essay.id}> </div>
+				 <input type="hidden" value="<{$essay.id}>" name="essayno"/>
+			     <div id="essaytitle">文章标题：<{$essay.title}> </div>
+			     <div id="abstract">文章摘要：<{$essay.summary}> </div>
+			     <div id="content">文章内容：<{$essay.content}> </div>
+			     <input  id="check" type="submit" value="审核通过"/>
+			  <div>
+			</div>
+			</div>
+			
+		  </div>
+		</form>	
+		</div>
+	
+	<include file="Public:admin-footer"/>
